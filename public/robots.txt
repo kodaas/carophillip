@@ -1,0 +1,77 @@
+# Robots.txt for Carophillip Heritage Pharmacy Ltd
+# https://carophillipheritage.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://carophillipheritage.com/sitemap.xml
+
+# Disallow certain paths (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /build/
+Disallow: /dist/
+
+# Allow important pages
+Allow: /
+Allow: /services
+Allow: /products
+Allow: /about
+Allow: /contact
+Allow: /health-tips
+Allow: /testimonials
+Allow: /consultation
+Allow: /emergency
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block certain bots (if needed)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Cache considerations
+User-agent: *
+Disallow: /cache/
+Disallow: /tmp/
+Disallow: /logs/
+
+# Allow social media crawlers
+User-agent: facebookexternalhit/1.1
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Host directive (optional)
+Host: https://carophillipheritage.com

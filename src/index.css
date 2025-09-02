@@ -1,0 +1,308 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply font-sans text-gray-600 bg-white;
+  }
+
+  h1 {
+    @apply text-display text-gray-600 tracking-tight;
+  }
+
+  h2 {
+    @apply text-headline text-gray-600 tracking-tight;
+  }
+
+  h3 {
+    @apply text-title text-gray-600;
+  }
+
+  h4 {
+    @apply text-subtitle text-gray-600;
+  }
+}
+
+@layer components {
+  .container-apple {
+    @apply max-w-apple-container mx-auto px-5 sm:px-6 lg:px-8;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center px-7 py-3 bg-primary hover:bg-primary-700 text-white font-medium rounded-apple transition-all duration-300;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center px-7 py-3 bg-gray-50 hover:bg-gray-100 text-primary font-medium rounded-apple transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply text-sm text-gray-500 hover:text-gray-600 transition-colors duration-300;
+  }
+
+  .input-apple {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-apple focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300;
+  }
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* Custom Component Classes */
+@layer components {
+    .btn-primary {
+        @apply bg-gradient-to-r from-primary-600 to-primary-700 text-white px-8 py-4 rounded-xl font-semibold shadow-apple-lg hover:shadow-apple-xl transition-all duration-300 hover:scale-105 active:scale-95;
+    }
+
+    .btn-secondary {
+        @apply bg-white text-primary-600 border-2 border-primary-600 px-8 py-4 rounded-xl font-semibold shadow-apple hover:bg-primary-50 transition-all duration-300 hover:scale-105 active:scale-95;
+    }
+
+    .btn-ghost {
+        @apply bg-transparent text-secondary-700 px-6 py-3 rounded-lg font-medium hover:bg-secondary-100 transition-all duration-300;
+    }
+
+    .card {
+        @apply bg-white rounded-2xl shadow-apple-lg p-8 hover:shadow-apple-xl transition-all duration-300 hover:scale-105;
+    }
+
+    .card-glass {
+        @apply bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8 shadow-apple-lg hover:shadow-apple-xl transition-all duration-300;
+    }
+
+    .section-padding {
+        @apply py-20 px-4 sm:px-6 lg:px-8;
+    }
+
+    .container-custom {
+        @apply max-w-7xl mx-auto;
+    }
+
+    .gradient-text {
+        @apply bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent;
+    }
+
+    .hero-gradient {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .nav-blur {
+        @apply bg-white/80 backdrop-blur-md border-b border-white/20;
+    }
+
+    .input-custom {
+        @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300;
+    }
+
+    .textarea-custom {
+        @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 resize-none;
+    }
+}
+
+/* Custom Animations */
+@layer utilities {
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .animate-pulse-gentle {
+        animation: pulse-gentle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .animate-slide-in-left {
+        animation: slideInLeft 0.5s ease-out;
+    }
+
+    .animate-slide-in-right {
+        animation: slideInRight 0.5s ease-out;
+    }
+
+    .animate-scale-in {
+        animation: scaleIn 0.5s ease-out;
+    }
+}
+
+/* Keyframes */
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse-gentle {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Responsive Typography */
+@screen sm {
+    .text-responsive-sm {
+        font-size: 0.875rem;
+    }
+}
+
+@screen md {
+    .text-responsive-md {
+        font-size: 1rem;
+    }
+}
+
+@screen lg {
+    .text-responsive-lg {
+        font-size: 1.125rem;
+    }
+}
+
+@screen xl {
+    .text-responsive-xl {
+        font-size: 1.25rem;
+    }
+}
+
+/* Focus States */
+.focus-visible:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --glass-bg: rgba(0, 0, 0, 0.1);
+        --glass-border: rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+        background-color: #0f172a;
+        color: #f8fafc;
+    }
+
+    .card {
+        @apply bg-secondary-800 text-white;
+    }
+
+    .nav-blur {
+        @apply bg-secondary-900/80;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        @apply bg-black text-white border-2 border-black;
+    }
+
+    .btn-secondary {
+        @apply bg-white text-black border-2 border-black;
+    }
+}
