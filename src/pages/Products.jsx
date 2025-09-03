@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Pill,
@@ -11,15 +11,9 @@ import {
   CheckCircle,
   ArrowRight,
   Stethoscope,
-  Thermometer,
-  Activity,
-  Zap,
   Leaf,
   Baby,
   User,
-  Eye,
-  Bone,
-  Brain,
 } from "lucide-react";
 
 const Products = () => {

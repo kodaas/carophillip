@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Pill,
@@ -13,13 +13,11 @@ import {
   User,
   FileText,
   AlertCircle,
-  Star,
   ArrowRight,
   Syringe,
   Activity,
   Clipboard,
   CreditCard,
-  MapPin,
   MessageSquare,
 } from "lucide-react";
 

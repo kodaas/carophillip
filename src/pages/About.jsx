@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import {
   Heart,
@@ -11,12 +10,7 @@ import {
   Star,
   CheckCircle,
   ArrowRight,
-  Stethoscope,
-  Pill,
-  GraduationCap,
-  BookOpen,
   Phone,
-  Mail,
 } from "lucide-react";
 
 const About = () => {
@@ -129,7 +123,7 @@ const About = () => {
       year: "2024",
       title: "Community Recognition",
       description:
-        'Awarded "Pharmacy of the Year" by the State Pharmaceutical Association.',
+        "Awarded &quot;Pharmacy of the Year&quot; by the State Pharmaceutical Association.",
     },
   ];
 
@@ -539,8 +533,8 @@ const About = () => {
               Experience the Carophillip Difference
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Join our family of satisfied customers and discover why we've been
-              the trusted choice for pharmaceutical care for over 25 years.
+              Join our family of satisfied customers and discover why we&apos;ve
+              been the trusted choice for pharmaceutical care for over 25 years.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

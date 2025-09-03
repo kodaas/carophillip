@@ -1,6 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Star, Quote } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Star, Quote } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
@@ -10,7 +9,7 @@ const Testimonials = () => {
       image: "👩🏾‍💼",
       rating: 5,
       text: "Carophillip Heritage Pharmacy has been my family's trusted pharmacy for over 5 years. Their professional service and quality medications are exceptional. The staff is knowledgeable and always ready to help.",
-      location: "Ayobo, Lagos"
+      location: "Ayobo, Lagos",
     },
     {
       name: "Dr. Michael Johnson",
@@ -18,7 +17,7 @@ const Testimonials = () => {
       image: "👨🏿‍⚕️",
       rating: 5,
       text: "I regularly recommend Carophillip Heritage to my patients. They maintain high standards, have reliable stock, and their pharmaceutical consultation services are top-notch. Truly professional.",
-      location: "Ipaja, Lagos"
+      location: "Ipaja, Lagos",
     },
     {
       name: "Mr. Ibrahim Suleiman",
@@ -26,7 +25,7 @@ const Testimonials = () => {
       image: "👴🏿",
       rating: 5,
       text: "The home delivery service is a blessing for elderly customers like me. They're always punctual, medications are properly packaged, and the staff treats everyone with respect and care.",
-      location: "Alimosho, Lagos"
+      location: "Alimosho, Lagos",
     },
     {
       name: "Miss Sarah Okafor",
@@ -34,7 +33,7 @@ const Testimonials = () => {
       image: "👩🏿‍💻",
       rating: 5,
       text: "Fast, efficient, and convenient! I love their online consultation service. The pharmacists are very helpful in explaining medications and potential side effects. Highly recommended!",
-      location: "Egbeda, Lagos"
+      location: "Egbeda, Lagos",
     },
     {
       name: "Mr. & Mrs. Babatunde",
@@ -42,7 +41,7 @@ const Testimonials = () => {
       image: "👨‍👩‍👧‍👦",
       rating: 5,
       text: "From baby care products to adult medications, they have everything our family needs. The prices are fair, and they often have helpful health tips. We won't shop anywhere else!",
-      location: "Ayobo, Lagos"
+      location: "Ayobo, Lagos",
     },
     {
       name: "Rev. Emmanuel Adeyemi",
@@ -50,8 +49,8 @@ const Testimonials = () => {
       image: "👨🏿‍🦳",
       rating: 5,
       text: "Carophillip Heritage is a pillar in our community. They've supported various health initiatives and always prioritize customer welfare over profit. A truly ethical business.",
-      location: "Atan Kekere, Lagos"
-    }
+      location: "Atan Kekere, Lagos",
+    },
   ];
 
   const containerVariants = {
@@ -59,9 +58,9 @@ const Testimonials = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -71,9 +70,9 @@ const Testimonials = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   const renderStars = (rating) => {
@@ -81,7 +80,7 @@ const Testimonials = () => {
       <Star
         key={index}
         className={`w-5 h-5 ${
-          index < rating ? 'text-yellow-400 fill-current' : 'text-gray-300'
+          index < rating ? "text-yellow-400 fill-current" : "text-gray-300"
         }`}
       />
     ));
@@ -100,7 +99,8 @@ const Testimonials = () => {
             What Our Customers Say
           </h2>
           <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-            Don't just take our word for it - hear from our satisfied customers who trust us with their health and wellness needs
+            Don&apos;t just take our word for it - hear from our satisfied
+            customers who trust us with their health and wellness needs
           </p>
         </motion.div>
 
@@ -131,7 +131,9 @@ const Testimonials = () => {
                   <h3 className="font-semibold text-lg text-secondary-900">
                     {testimonial.name}
                   </h3>
-                  <p className="text-secondary-600 text-sm">{testimonial.role}</p>
+                  <p className="text-secondary-600 text-sm">
+                    {testimonial.role}
+                  </p>
                   <p className="text-primary-600 text-xs font-medium">
                     {testimonial.location}
                   </p>
@@ -145,7 +147,7 @@ const Testimonials = () => {
 
               {/* Testimonial Text */}
               <p className="text-secondary-700 leading-relaxed italic">
-                "{testimonial.text}"
+                &quot;{testimonial.text}&quot;
               </p>
 
               {/* Decorative Element */}
@@ -186,9 +188,7 @@ const Testimonials = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-12"
         >
-          <button className="btn-primary">
-            Share Your Experience
-          </button>
+          <button className="btn-primary">Share Your Experience</button>
         </motion.div>
       </div>
     </section>

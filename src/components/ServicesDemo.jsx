@@ -5,14 +5,11 @@ import {
   Heart,
   Stethoscope,
   Shield,
-  Truck,
   Clock,
   Phone,
   CheckCircle,
   ArrowRight,
   MapPin,
-  Users,
-  Award,
 } from "lucide-react";
 
 const ServicesDemo = () => {

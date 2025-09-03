@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Heart } from 'lucide-react';
+import PropTypes from "prop-types";
+import { motion } from "framer-motion";
+import { Heart } from "lucide-react";
 
 const LoadingScreen = ({ isLoading }) => {
   if (!isLoading) return null;
@@ -11,12 +11,12 @@ const LoadingScreen = ({ isLoading }) => {
         <motion.div
           animate={{
             scale: [1, 1.2, 1],
-            opacity: [1, 0.8, 1]
+            opacity: [1, 0.8, 1],
           }}
           transition={{
             duration: 1.5,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
           className="mb-8"
         >
@@ -41,6 +41,10 @@ const LoadingScreen = ({ isLoading }) => {
       </div>
     </div>
   );
+};
+
+LoadingScreen.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
 };
 
 export default LoadingScreen;

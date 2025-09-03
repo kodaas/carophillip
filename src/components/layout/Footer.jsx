@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
   Heart,
@@ -35,9 +34,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Your trusted partner in health and wellness. We've been serving
-              our community for over 25 years with quality pharmaceutical care
-              and personalized service.
+              Your trusted partner in health and wellness. We&apos;ve been
+              serving our community for over 25 years with quality
+              pharmaceutical care and personalized service.
             </p>
 
             {/* Certifications */}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Phone,
@@ -13,9 +13,6 @@ import {
   Stethoscope,
   Truck,
   Shield,
-  User,
-  FileText,
-  Heart,
 } from "lucide-react";
 
 const Contact = () => {
@@ -118,8 +115,8 @@ const Contact = () => {
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl md:text-2xl opacity-90 leading-relaxed">
-              Get in touch with our healthcare professionals. We're here to help
-              with all your pharmaceutical needs.
+              Get in touch with our healthcare professionals. We&apos;re here to
+              help with all your pharmaceutical needs.
             </p>
           </motion.div>
         </div>
@@ -180,7 +177,7 @@ const Contact = () => {
                       <CheckCircle className="w-5 h-5 text-green-600 mr-2" />
                       <p className="text-green-800 font-medium">
                         Thank you! Your message has been sent successfully.
-                        We'll get back to you soon.
+                        We&apos;ll get back to you soon.
                       </p>
                     </div>
                   </div>

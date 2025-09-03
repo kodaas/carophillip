@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import ScrollToTop from "./components/ScrollToTop";
@@ -60,7 +59,7 @@ function App() {
                     404 - Page Not Found
                   </h1>
                   <p className="text-gray-600 mb-8">
-                    The page you're looking for doesn't exist.
+                    The page you&apos;re looking for doesn&apos;t exist.
                   </p>
                   <a href="/" className="btn-primary">
                     Return Home
